@@ -4,9 +4,9 @@
 
 <h2>Technical Enablement Hands-On Lab Guide</h2>
 
-![Spotlight]
+
 <video width="320" height="240" controls>
-  <source src="video/earth.mp4" type="video/mp4">
+  <source src="_video/earth.mp4" type="video/mp4">
 </video>
 
 ### Lab Overview
