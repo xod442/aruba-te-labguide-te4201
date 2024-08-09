@@ -4,7 +4,10 @@
 
 <h2>Technical Enablement Hands-On Lab Guide</h2>
 
-![Spotlight](video/earth.mp4)
+![Spotlight]
+<video width="320" height="240" controls>
+  <source src="video/earth.mp4" type="video/mp4">
+</video>
 
 ### Lab Overview
 This Lab Guide will walk you through the various parts of this Hands On Lab session.  During this deep dive session, you will:
