@@ -1,6 +1,6 @@
-# Lab 2 - Build the Fabric
+﻿# Lab 2 - Build the Fabric
 
-## Lab Overview
+## Lab Overview….
 
 Lab time:  20 minutes
 
@@ -59,7 +59,7 @@ _Fig. Lab 2 Discovered Switches_
 ### Description
 In this step, we will create a Fabric.  In the AFC, a fabric is the group of devices with their corresponding configuration and state, including switches, and integrated platforms (vSphere, PSM, etc.).
 
-### Validate
+### Validate.
 
 1. On the **Guided Step** menu on the right side, select the **FABRIC** button.
 
