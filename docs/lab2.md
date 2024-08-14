@@ -62,6 +62,10 @@ In this step, we will create a Fabric.  In the AFC, a fabric is the group of dev
 
 ### Validate.
 
+<video width="320" height="240" controls>
+  <source src="_video/afc_login.mp4" type="video/mp4">
+</video>
+
 1. On the **Guided Step** menu on the right side, select the **FABRIC** button.
 
 ![Create Fabric](images/lab2-create-fabric.png)  
