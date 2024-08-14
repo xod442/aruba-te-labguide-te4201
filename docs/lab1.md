@@ -91,9 +91,6 @@ This is a table of all the IP addresses in your lab group. This is where you wil
 | Workload-02 | Managment | 10.250.2<span style="color:orange">**[LG]**</span>.202 |
 | Workload-03 | Managment | 10.250.2<span style="color:orange">**[LG]**</span>.203 |
 
-<video width="320" height="240" controls>
-  <source src="_video/afc_login.mp4" type="video/mp4">
-</video>
 
 ### Validate
 1. Open the browser on the lab Windows machine

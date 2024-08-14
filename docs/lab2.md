@@ -1,6 +1,7 @@
 ﻿# Lab 2 - Build the Fabric
 
-## Lab Overview….
+## Lab Overview
+….
 
 Lab time:  20 minutes
 
@@ -65,6 +66,7 @@ In this step, we will create a Fabric.  In the AFC, a fabric is the group of dev
 
 ![Create Fabric](images/lab2-create-fabric.png)  
 _Fig. Lab 2 Create Fabric_ 
+
 
 2. Create a new fabric using the following parameters:
 
