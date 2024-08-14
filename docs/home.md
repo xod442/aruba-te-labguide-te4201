@@ -1,4 +1,4 @@
-![Lab Overview](images/hpe-aruba-logo.png)
+![Lab Overview](images/hpe-aruba-logo.svg)
 
 <h1>Data Center Networking - Microsegmentation with AFC & CX 10K rick</h1>
 
