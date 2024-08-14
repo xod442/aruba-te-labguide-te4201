@@ -1,13 +1,11 @@
-![Lab Overview](images/hpe-logo.svg)
+![Lab Overview](images/hpe-logo.png)
 
 <h1>Data Center Networking - Microsegmentation with AFC & CX 10K rick</h1>
 
 <h2>Technical Enablement Hands-On Lab Guide</h2>
 
 
-<video width="320" height="240" controls>
-  <source src="_video/afc_login.mp4" type="video/mp4">
-</video>
+
 
 ### Lab Overview
 This Lab Guide will walk you through the various parts of this Hands On Lab session.  During this deep dive session, you will:
