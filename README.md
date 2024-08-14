@@ -1,6 +1,6 @@
 # Test Drive Documentation
 
-## Prerequisites
+## Prerequisites.
 
 - Python >= 3.10
 - pip3 install -r requirements.txt
