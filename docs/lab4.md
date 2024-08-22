@@ -123,7 +123,7 @@ The Allow All rule should be successfully created and visible in the list of Rul
 ## Lab 4.3 - Create Firewall Policy
 
 ### Description
-Firewall Rules are place in Policies and are enforced in a top to bottom fashion.  We will create a Policy in this lab, and assign our Allow All rule to it.
+Firewall Rules are placed in Policies and are enforced in a top to bottom fashion.  We will create a Policy in this lab, and assign our Allow All rule to it.
 
 ### Validate
 
@@ -319,4 +319,11 @@ The VMs are connected to the Isolated VLAN 11 port group. And now you see the sw
 
 ## Lab 4 Summary
 
-In this lab we ...
+- During this lab, we enabled microsegmentation on the CX 10000 switches  
+- We created Endpoint Groups for each of the workloads running in the lab  
+  - We used VM Tags for matching to demostrate how to create dynamic firewall rules
+- We created an Allow All firewall rule  
+- We created a firewall policy and added the Allow All rule to that policy  
+- We use the AFC to activate Microsegmentation  
+  - We created a Private VLAN and added our test workload vNICs to this new Private VLAN  to ensure VM isolation  
+ 

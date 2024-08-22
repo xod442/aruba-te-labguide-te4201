@@ -1,7 +1,6 @@
-﻿# Lab 2 - Build the Fabric
+# Lab 2 - Build the Fabric
 
 ## Lab Overview
-….
 
 Lab time:  20 minutes
 
@@ -60,17 +59,12 @@ _Fig. Lab 2 Discovered Switches_
 ### Description
 In this step, we will create a Fabric.  In the AFC, a fabric is the group of devices with their corresponding configuration and state, including switches, and integrated platforms (vSphere, PSM, etc.).
 
-### Validate.
-
-<video width="320" height="240" controls>
-  <source src="_video/afc_login.mp4" type="video/mp4">
-</video>
+### Validate
 
 1. On the **Guided Step** menu on the right side, select the **FABRIC** button.
 
 ![Create Fabric](images/lab2-create-fabric.png)  
 _Fig. Lab 2 Create Fabric_ 
-
 
 2. Create a new fabric using the following parameters:
 
@@ -294,5 +288,7 @@ _Fig. Lab 2 VSX Health_
 
 ## Lab 2 Summary
 
-Using the AFC we were 
- 
+- Using the Aruba Fabric Composer, we discovered two CX 10000 Switches  
+- We created a new Fabric and assigned the two Switches to that fabric  
+- We configured the basic network services (DNS and NTP) and assigned these profiles to the switches  
+- We built a VSX cluster of the two switches  

@@ -190,4 +190,8 @@ _Fig. Lab 3 DSS Overview_
 
 ## Lab 3 Summary
 
-In this lab we explored the power of Integrations in the AFC.  blah blah
+- During this lab, we added third party integrations to the Aruba Fabric Composer  
+- We added an integration to vSphere from AFC
+  - We verified the integration, by using the Host Visualization feature in the AFC
+- We added an integration with the AMD Policy and Services Manager  
+- We accessed the PSM to verify that the integration was successful and that both CX 10000 switches were added by AFC to PSM  

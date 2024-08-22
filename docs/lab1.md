@@ -92,6 +92,7 @@ This is a table of all the IP addresses in your lab group. This is where you wil
 | Workload-03 | Managment | 10.250.2<span style="color:orange">**[LG]**</span>.203 |
 
 
+
 ### Validate
 1. Open the browser on the lab Windows machine
 2. Navigate to the Fabric Composer using the following URL:  https://10.250.2LG.30/
@@ -109,4 +110,4 @@ _Fig. Lab 1 AFC Login_
 
 ### Expected Results
 
-Once inside, you will be connected via https and RDP to a Windows 10 machine that  
+Once inside, you will be connected via https and RDP to a Windows 10 machine that has access to all of the lab components.
