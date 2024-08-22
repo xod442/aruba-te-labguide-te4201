@@ -1,4 +1,4 @@
-# Lab 2 - Build the Fabric
+# Lab 3 - Build the Fabric
 
 ## Lab Overview
 
@@ -13,7 +13,7 @@ In this lab, we are going to use the Aruba Fabric Composer (AFC) to:
 * Create a VSX Cluster
 
 
-## Lab 2.1 - Discover the Switches
+## Lab 3.1 - Discover the Switches
 
 ### Description
 Using the AFC we will discover the already deployed CX10000 switches.
@@ -27,12 +27,12 @@ Using the AFC we will discover the already deployed CX10000 switches.
 | Password | ``admin``  
 
 ![AFC Login](images/lab1-afc-login.png)  
-_Fig. Lab 2 AFC Login_  
+_Fig. Lab 3 AFC Login_  
 
 2. Using the **Guided Setup** menu on the right side, click on the **SWITCHES** button in order to discover the new switches.
 
 ![Discover Switches](images/lab2-discover-switches-menu.png)  
-_Fig. Lab 2 Discover Switches_  
+_Fig. Lab 3 Discover Switches_  
 
 3. To import the CX 10000 Switches, enter the following parameters in the form:  
 
@@ -52,9 +52,9 @@ The Service Account User will be created on each switch, and will be used for AP
 The Switches should be discovered as shown in the following screenshot.  The **Health** Status should show **HEALTHY, BUT** or **UNKNOWN**.  This means that the switches have been discovered, but are not yet assigned to a fabric.  
 
 ![Discovered Switches](images/lab2-discovered-switches.png)  
-_Fig. Lab 2 Discovered Switches_ 
+_Fig. Lab 3 Discovered Switches_ 
 
-## Lab 2.2 - Create a Fabric
+## Lab 3.2 - Create a Fabric
 
 ### Description
 In this step, we will create a Fabric.  In the AFC, a fabric is the group of devices with their corresponding configuration and state, including switches, and integrated platforms (vSphere, PSM, etc.).
@@ -64,7 +64,7 @@ In this step, we will create a Fabric.  In the AFC, a fabric is the group of dev
 1. On the **Guided Step** menu on the right side, select the **FABRIC** button.
 
 ![Create Fabric](images/lab2-create-fabric.png)  
-_Fig. Lab 2 Create Fabric_ 
+_Fig. Lab 3 Create Fabric_ 
 
 2. Create a new fabric using the following parameters:
 
@@ -81,9 +81,9 @@ _Fig. Lab 2 Create Fabric_
 Verify that the Fabric state is **HEALTHY** and looks similar to the following screenshot.
 
 ![Healthy Fabric](images/lab2-healthy-fabric.png)  
-_Fig. Lab 2 Healthy Fabric_ 
+_Fig. Lab 3 Healthy Fabric_ 
 
-## Lab 2.3 - Assign Switches to a Fabric
+## Lab 3.3 - Assign Switches to a Fabric
 
 ### Description
 Once a Switch is discovered, you can use the Assign Switch wizard to assign a role to the switch (Leaf, Spine, Border Leaf, etc) and also assign the Switch to a Fabric.  We will use this step to assign the switches to the newly created Fabric.
@@ -93,7 +93,7 @@ Once a Switch is discovered, you can use the Assign Switch wizard to assign a ro
 1. On the **Guided Setup** menu click on **ASSIGN SWITCH TO FABRIC**
 
 ![Assign Switch](images/lab2-assign-switch.png)  
-_Fig. Lab 2 Assign Switch_ 
+_Fig. Lab 3 Assign Switch_ 
 
 2. Select the Fabric, the Switches and the Role Leaf as in this table:
 
@@ -110,21 +110,21 @@ _Fig. Lab 2 Assign Switch_
 After a short moment, the switches should appear as **HEALTHY** and the status should be **Synced**, as in the following screenshot:
 
 ![Healthy Switches](images/lab2-healthy-switches.png)  
-_Fig. Lab 2 Healthy Switches_  
+_Fig. Lab 3 Healthy Switches_  
 
 If the Switch status does not change after a few moments, refresh the page in the RDP session.
 
 ![Refresh Browser](images/lab2-refresh-browser.png)  
-_Fig. Lab 2 Refresh Browser_  
+_Fig. Lab 3 Refresh Browser_  
 
 ```{note}
 If the workflow wizard has disappeared on the right-hand side of the screen. Click the icon shown below in the top right corner and you will see the workflows reappear.
 ```
 
 ![Workflow Wizard](images/lab2-workflow-wizard.png)  
-_Fig. Lab 2 Workflow Wizard_  
+_Fig. Lab 3 Workflow Wizard_  
 
-## Lab 2.4 - Configure NTP
+## Lab 3.4 - Configure NTP
 
 ### Description
 As in any organization or infrastructure, accurate time is crucial!  In this step, we will make sure that the Switches are configured to sync their time with a valid NTP server.
@@ -134,7 +134,7 @@ As in any organization or infrastructure, accurate time is crucial!  In this ste
 On the **Guided Setup** menu click on **NTP Configuration**
 
 ![Configure NTP](images/lab2-configure-ntp.png)  
-_Fig. Lab 2 Configure NTP_ 
+_Fig. Lab 3 Configure NTP_ 
 
 |   |   |
 |---|---|
@@ -165,7 +165,7 @@ _Fig. Lab 2 Configure NTP_
 The Lab NTP server should be assigned to the Fabric and Switches.
 
 
-## Lab 2.5 - Configure DNS
+## Lab 3.5 - Configure DNS
 
 ### Description
 DNS is equally as crucial for running infrastructure.  This step will assign a DNS server to the Fabric and Switches. 
@@ -175,7 +175,7 @@ DNS is equally as crucial for running infrastructure.  This step will assign a D
 In the **Guided Setup** menu click on **DNS Configuration**
 
 ![Configure DNS](images/lab2-configure-dns.png)  
-_Fig. Lab 2 Configure DNS_ 
+_Fig. Lab 3 Configure DNS_ 
 
 
 |   |   |
@@ -207,7 +207,7 @@ _Fig. Lab 2 Configure DNS_
 The Lab DNS server should be assigned to the Fabric and Switches.
 
 
-## Lab 2.6 - Create a VSX Cluster
+## Lab 3.6 - Create a VSX Cluster
 
 ### Description
 Virtual Switching Extension (VSX) is virtualization technology for switches running the AOS-CX operating system. This solution lets the switches present as one virtualized switch in critical areas. Configuration synchronization is an aspect of the VSX solution where the primary switch configuration is synchronized with the secondary switch.
@@ -218,7 +218,7 @@ In this step, we will create a VSX cluster with both CX 10000 Switches.
 In the **Guided Setup** menu click on **DNS Configuration**
 
 ![VSX Configuration](images/lab2-vsx-configuration.png)  
-_Fig. Lab 2 VSX Configuration_ 
+_Fig. Lab 3 VSX Configuration_ 
 
 
 |   |   |
@@ -246,13 +246,7 @@ _Fig. Lab 2 VSX Configuration_
 |**Step 4 - Keep Alive Interfaces**| |
 |Interface Mode| Point-to-Point |
 || Click **ADD** (opens a new wizard)|
-||Sub-Step A - Name| |
-|| Name | dsf-ipv4-pool |  
-|| Description | IPv4 Address Pool | 
-|| ***Click NEXT*** |
-|| Sub-Step B - Settings| |
-|| Resource Pool | ```10.10.0.0/24``` |  
-| ***Click NEXT, APPLY and NEXT again***
+
 
 |   |   |
 |---|---|
@@ -266,13 +260,7 @@ _Fig. Lab 2 VSX Configuration_
 |**Step 6 - Options**| |
 |Linkup Delay Timer| (keep the default value) |
 |MAC Address Resource Pool| Click **ADD** (opens new wizard)|
-||**Sub-Step A - Name**| |
-|| Name | dsf-mac-pool |  
-|| Description | MAC Address Pool | 
-|| ***Click NEXT*** |
-||**Sub-Step B - Settings**| |
-|| Resource Pool | ```02:00:00:00:00:aa-02:00:00:00:00:ff``` |  
-| Click **NEXT**, **APPLY** and **NEXT**
+
 
 |   |   |
 |---|---|
@@ -284,9 +272,9 @@ _Fig. Lab 2 VSX Configuration_
 The VSX cluster consisting of the two CX 10000 should be successfully created and should also be up and healthy.
 
 ![VSX Health](images/lab2-vsx-health.png)  
-_Fig. Lab 2 VSX Health_ 
+_Fig. Lab 3 VSX Health_ 
 
-## Lab 2 Summary
+## Lab 3 Summary
 
 - Using the Aruba Fabric Composer, we discovered two CX 10000 Switches  
 - We created a new Fabric and assigned the two Switches to that fabric  

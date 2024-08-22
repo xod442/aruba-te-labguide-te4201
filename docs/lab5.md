@@ -1,4 +1,4 @@
-# Lab 4 - Microsegmentation
+# Lab 5 - Microsegmentation
 
 ## Lab Overview
 
@@ -6,7 +6,7 @@ Lab time:  40 minutes
 
 In the previous labs, we built a fabric, attached switches, and added integrations with vSphere and the PSM.  There are several workload VMs running in each lab and during this lab, we will levarage the integrations to build firewall policies to microsegment the workloads from each other.
 
-## Lab 4.1 - Create Endpoint Group for Workloads
+## Lab 5.1 - Create Endpoint Group for Workloads
 
 ### Description
 In this task, you will create 2 endpoint groups. An endpoint group in Fabric Composer is a set of VMs that have the same set of policy rules.
@@ -16,12 +16,12 @@ In this task, you will create 2 endpoint groups. An endpoint group in Fabric Com
 1. Using the AFC, select **Policy** and then **Enpoint Groups** from the top level menu
 
 ![Endpoint Groups Menu](images/lab4-endpoint-groups-menu.png)  
-_Fig. Lab 4 Endpoint Groups Menu_  
+_Fig. Lab 5 Endpoint Groups Menu_  
 
 2. From the **ACTIONS** menu, select **Add**  
 
 ![Add Endpoint Group](images/lab4-add-endpoint-groups.png)  
-_Fig. Lab 4 Add Endpoint Group_  
+_Fig. Lab 5 Add Endpoint Group_  
 
 3. Create an Endpoint Group for Workload01
 
@@ -76,7 +76,7 @@ _Fig. Lab 4 Add Endpoint Group_
 The Endpoint Groups should have been created based on VM Tag and visible in the list.
 
 
-## Lab 4.2 - Create Firewall Rule
+## Lab 5.2 - Create Firewall Rule
 
 ### Description
 When enabling Microsegmentation, an explicit Deny All rule is placed at the bottom of the rule list, which acts as a catch all. For the purpose of these labs and in order to test the Switch Firewalling functionality, we will place an **Allow All** rule at the bottom, and add specific Deny rules above it.
@@ -120,7 +120,7 @@ When enabling Microsegmentation, an explicit Deny All rule is placed at the bott
 The Allow All rule should be successfully created and visible in the list of Rules.
 
 
-## Lab 4.3 - Create Firewall Policy
+## Lab 5.3 - Create Firewall Policy
 
 ### Description
 Firewall Rules are placed in Policies and are enforced in a top to bottom fashion.  We will create a Policy in this lab, and assign our Allow All rule to it.
@@ -183,10 +183,10 @@ configure L2 or L3 ACLs
 The newly created Policy should appear in the Policy list (see screenshot below).
 
 ![Policy List](images/lab4-policy-list.png)  
-_Fig. Lab 4 Policy List_  
+_Fig. Lab 5 Policy List_  
 
 
-## Lab 4.4 - Configure Microsegmentation
+## Lab 5.4 - Configure Microsegmentation
 
 ### Description
 A microsegmentation is a set of configurations starting with a private/isolated VLAN on the host that extends to the switch. On the switch, that VLAN is redirected to the Pensando DSM processor for policy enforcement.  
@@ -203,7 +203,7 @@ We will use the Microsegmentation Configuration in Fabric Composer which will:
 1. Using the AFC, we will use the Guided Setup menu on the right side.  Go to **DISTRIBUTED SERVICES** and select **CONFIGURE MICROSEGMENTATION**  
 
 ![Configure Microsegmentation](images/lab4-configure-microsegmentation.png)  
-_Fig. Lab 4 Configure Microsegmentation_  
+_Fig. Lab 5 Configure Microsegmentation_  
 
 
 |   |   |
@@ -306,18 +306,18 @@ To confirm that Microsegmentation has been properly configured, click ***Visuali
 On the left side fo the map, under **Settings**, you can use the **Zoom Out** function until you can see the whole diagram.  Also under **Settings**, select **Name Truncation: None**  
 
 ![Diagram Settings](images/lab4-diagram-settings.png)  
-_Fig. Lab 4 Diagram Settings_  
+_Fig. Lab 5 Diagram Settings_  
 
 Check the diagram to verify the connections and make sure you are looking at your specific Lab Group.  
 
 ![Host Visualization](images/lab4-host-visualization.png)  
-_Fig. Lab 4 Host Visualization_  
+_Fig. Lab 5 Host Visualization_  
 
 ```{note}
 The VMs are connected to the Isolated VLAN 11 port group. And now you see the switch connections
 ```
 
-## Lab 4 Summary
+## Lab 5 Summary
 
 - During this lab, we enabled microsegmentation on the CX 10000 switches  
 - We created Endpoint Groups for each of the workloads running in the lab  
