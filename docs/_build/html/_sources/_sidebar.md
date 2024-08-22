@@ -2,9 +2,10 @@
 -  [ Home](home.md)
 -  [ Lab 1 - Overview](lab1.md)
 -  [ Lab 2 - Build the Fabric](lab2.md)
--  [ Lab 3 - Integrations](lab3.md)
--  [ Lab 4 - Microsegmentation](lab4.md)
--  [ Lab 5 - Observability](lab5.md)
+-  [ Lab 3 - Build the Fabric](lab3.md)
+-  [ Lab 4 - Integrations](lab4.md)
+-  [ Lab 5 - Microsegmentation](lab5.md)
+-  [ Lab 6 - Observability](lab6.md)
 -  [ Summary + Feedback](summary.md)
 
 **PROJECT INFO**  

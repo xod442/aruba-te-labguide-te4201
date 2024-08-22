@@ -1,7 +1,7 @@
 ![HPE Logo](images/hpe-logo.png)
 -  [ Home](home.md)
 -  [ Lab 1 - Overview](lab1.md)
--  [ Lab 2 - Build the Fabric](lab2.md)
+-  [ Lab 2 - Create Network Resource Pools](lab2.md)
 -  [ Lab 3 - Build the Fabric](lab3.md)
 -  [ Lab 4 - Integrations](lab4.md)
 -  [ Lab 5 - Microsegmentation](lab5.md)
