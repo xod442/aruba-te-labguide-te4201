@@ -4,7 +4,7 @@ copyright: '2024'
 logo: 'images/hpe-logo.png'
 
 description: >-
-  Test Drive Lab Guide
+ TE4201 Lab Guide
 
 execute:
   execute_notebooks           : off

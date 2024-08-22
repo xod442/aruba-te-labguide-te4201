@@ -6,8 +6,8 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'TestDriveDocs'
-copyright = '2024, TestDriveDocs'
+project = 'TE42021'
+copyright = '2024, TE4201'
 author = 'Frey'
 release = '0.1'
 

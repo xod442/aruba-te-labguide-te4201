@@ -1,4 +1,4 @@
-# Lab 2 - 
+# Lab 2 - Create Network Resource Pools
 
 ## Lab Overview
 
