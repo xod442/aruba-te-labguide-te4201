@@ -11,45 +11,6 @@ In this lab, we are going to explore the lab environment and access the various 
 ![Lab Layout](images/lab1-lab-layout.png)
 _Fig. Lab Physical Layout_
 
-## Lab 1.1 - Enter the Remote Lab
-
-### Description
-Log in to the HPE Aruba Portal in order to access your pod.  This is a Virtual Desktop Infrastructure (VDI) site that hosts the HPE Aruba Networking hands-on workshops
-
-![HPE Login](images/lab1-login-hpe.png)  
-_Fig. HPE Login_
-
-### Validate
-Log in to the HPE Aruba VDI site using the following details:
-
-**URL:**  https://gw.vlabs.hpe.com  
-**Username:**  ``Your Email Address``  
-**Password:**  ``Your password``    
-
-### Expected Results
-You will be authenticated and a second login prompt will appear.
-
-
-## Lab 1.2 - Access the VDI Environment
-
-### Description
-Once you successfully authenticate to the HPE portal, you will need to activate your VDI session by logging in.  
-
-
-![VDI Login](images/lab1-login-vdi.png)  
-_Fig. Lab VDI Login_
-
-### Validate
-Use the credentials provided by the workshop instructor to log in:
-
-**Username:**  ``166184user2``  (Example Username)  
-**Password:**  ``treelot2``  (Example Password)  
-
-<span style="color:orange">***Make sure to select the Keyboard Layout matching your physical keyboard***</span>
-
-```{note}
-Make sure to select the Keyboard Layout matching your physical keyboard.
-```
 
 ```{note}
 The last number of your workshop will be used to determine you lab group number. If you are user1 then your lab group number will be 01. If your userid ends with 10, then you lab grpoup number is 10. You will use the lab group number through out the workshop.
