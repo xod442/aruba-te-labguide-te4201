@@ -280,3 +280,10 @@ _Fig. Lab 3 VSX Health_
 - We created a new Fabric and assigned the two Switches to that fabric  
 - We configured the basic network services (DNS and NTP) and assigned these profiles to the switches  
 - We built a VSX cluster of the two switches  
+
+## Lab 3 Learning Check
+
+- AFC uses Network Resource pools for IP and MAC addresses
+- Switches must be assigned to a fabric
+- VSX workflow makes configuration simple
+- DNS & NTP are configured and assigned to a fabric

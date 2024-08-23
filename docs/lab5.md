@@ -325,5 +325,14 @@ The VMs are connected to the Isolated VLAN 11 port group. And now you see the sw
 - We created an Allow All firewall rule  
 - We created a firewall policy and added the Allow All rule to that policy  
 - We use the AFC to activate Microsegmentation  
-  - We created a Private VLAN and added our test workload vNICs to this new Private VLAN  to ensure VM isolation  
+  - We created a Private VLAN and added our test workload vNICs to this new Private VLAN  to ensure VM isolation 
+
+## Lab 5 Learning Check 
+
+- Endpoint Groups can be created manually or automatically learned from VMware
+- Rules are added to policies. 
+- Policies are atuomatically sent to the AMD Pensando Policy Services Manager(PSM)
+- PSM programs the DPU chips on the HPE Aruba CX 10000 switch
+
+
  
