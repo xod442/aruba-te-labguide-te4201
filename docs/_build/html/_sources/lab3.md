@@ -234,7 +234,7 @@ _Fig. Lab 3 VSX Configuration_
 |---|---|---|
 |**Step 4 - Keep Alive Interfaces**| |
 |Interface Mode| Point-to-Point |
-|IPv4 Address Resource Pool| Pull **DOWN** on the right hand arrown and select the pre-defined IPv4 pool|
+|IPv4 Address Resource Pool| Pull **DOWN** on the right hand arrow and select the pre-defined IPv4 pool|
 ||``dsf-ipv4-pool(10.10.0.0-10.10.0.255)``|
 | ***Click NEXT***||
 
