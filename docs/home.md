@@ -1,5 +1,8 @@
 ![Lab Overview](images/hpe-logo2.svg)
 
+![Disclosure](images/disclose.png)
+_Fig. Disclosure_
+
 <h1>Data Center Networking - Microsegmentation with AFC & CX 10K</h1>
 
 <h2>Technical Enablement Hands-On Lab Guide</h2>
@@ -19,4 +22,6 @@ This Hands-On Lab is composed of the following activities:
 3. Integrate VMware vSphere and AMD Pensando Policy and Services Manager
 4. Deploy micro segmentation to apply and enforce a traffic policy between two VMs (Workloads)
 5. Test the policy applied between the Workloads
+
+
 

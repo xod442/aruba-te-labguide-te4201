@@ -651,7 +651,7 @@ document.write(`
 </ol>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">diagnostics</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">diag</span> <span class="pre">dsm</span> <span class="pre">console</span> <span class="pre">1/1</span></code> (ensure you specify the DSM from the command above)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">diag</span> <span class="pre">dsm</span> <span class="pre">console</span> <span class="pre">1/1</span> <span class="pre">or</span> <span class="pre">1/2</span></code> (ensure you specify the DSM from the command above)</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pdsctl</span> <span class="pre">show</span> <span class="pre">flow</span></code></p></li>
 </ul>
 </section>
@@ -1050,7 +1050,7 @@ document.write(`
 </div>
 <ol class="arabic simple" start="6">
 <li><p>Go to <strong>Policies</strong>, find the <strong>dsf-leafLG-01</strong> policy, and click the <strong>3 dots</strong> to add/modify the rules</p></li>
-<li><p>Select the <code class="docutils literal notranslate"><span class="pre">allow_all</span></code> rule and under <strong>ACTIONS</strong>, click <strong>Remove</strong></p></li>
+<li><p>Select the <code class="docutils literal notranslate"><span class="pre">allow_all_vlan_10</span></code> rule and under <strong>ACTIONS</strong>, click <strong>Remove</strong></p></li>
 <li><p>Click the <strong>ACTIONS</strong> menu again, and now select <strong>ADD &gt; Existing</strong> in order to add the rules from the previous step, to this policy</p></li>
 <li><p>Select the new rules and click <strong>APPLY</strong></p></li>
 </ol>
@@ -1169,10 +1169,19 @@ document.write(`
 <em>Fig. Security Policies Filter</em></p>
 <ol class="arabic simple" start="4">
 <li><p>Wait for the data to load and analyze the Unique Flows table on the right hand side.</p></li>
+<li><p>Go to workload01 and stop the ipfer3 client.</p></li>
 </ol>
+<p>Verify the ssh rule is working.</p>
+<ol class="arabic simple" start="6">
+<li><p>Open an SSH session from <strong>workload01</strong> to <strong>workload02</strong></p></li>
+</ol>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ssh</span> <span class="pre">arubatm&#64;10.0.10.102</span></code></p></li>
+</ul>
 </section>
 <section id="id21">
 <h3>Expected Results<a class="headerlink" href="#id21" title="Link to this heading">#</a></h3>
+<p>The SSH session should connect, if not check the rules assigned to the policy.</p>
 <p>Using the Unique Flows function from the PSM, we are able to see all of our unique flows on VLAN, over a specified time period.  Having this level of data is crucial for implementing stateful services on your network.</p>
 </section>
 </section>

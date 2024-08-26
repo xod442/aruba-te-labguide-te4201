@@ -140,7 +140,7 @@ In this example, VLAN 10 is redirected to DSM 1/1 on both switches, however in y
 5. To visualize the flows, enter diagnostics mode on the switch by entering the following commands:  
 
   - ``diagnostics``  
-  - ``diag dsm console 1/1`` (ensure you specify the DSM from the command above)  
+  - ``diag dsm console 1/1 or 1/2`` (ensure you specify the DSM from the command above)  
   - ``pdsctl show flow``  
 
 ### Expected Results  
@@ -311,7 +311,7 @@ There is an implicit deny all rule at the end of any policy, so this step is opt
 
 6. Go to **Policies**, find the **dsf-leafLG-01** policy, and click the **3 dots** to add/modify the rules  
 
-7. Select the ``allow_all`` rule and under **ACTIONS**, click **Remove**  
+7. Select the ``allow_all_vlan_10`` rule and under **ACTIONS**, click **Remove**  
 
 8. Click the **ACTIONS** menu again, and now select **ADD > Existing** in order to add the rules from the previous step, to this policy  
 
@@ -419,7 +419,17 @@ _Fig. Security Policies Filter_
 
 4. Wait for the data to load and analyze the Unique Flows table on the right hand side.  
 
-### Expected Results  
+5. Go to workload01 and stop the ipfer3 client. 
+
+Verify the ssh rule is working.
+
+6. Open an SSH session from **workload01** to **workload02**
+
+- ``ssh arubatm@10.0.10.102``
+
+### Expected Results 
+
+The SSH session should connect, if not check the rules assigned to the policy.
 
 Using the Unique Flows function from the PSM, we are able to see all of our unique flows on VLAN, over a specified time period.  Having this level of data is crucial for implementing stateful services on your network.  
 
