@@ -707,7 +707,7 @@ document.write(`
 <tr class="row-even"><td><p>Name Server</p></td>
 <td><p>10.250.2LG.9 - hit <strong>Enter</strong> after typing the IP Address (LG is your labgroup number)</p></td>
 </tr>
-<tr class="row-odd"><td><p><em><strong>Scroll down, click ADD and NEXT</strong></em></p></td>
+<tr class="row-odd"><td><p><em><strong>Click NEXT</strong></em></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -842,8 +842,16 @@ document.write(`
 <td><p>Point-to-Point</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p></p></td>
-<td><p>Click <strong>ADD</strong> (opens a new wizard)</p></td>
+<tr class="row-even"><td><p>IPv4 Address Resource Pool</p></td>
+<td><p>Pull <strong>DOWN</strong> on the right hand arrown and select the pre-defined IPv4 pool</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">dsf-ipv4-pool(10.10.0.0-10.10.0.255)</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><em><strong>Click NEXT</strong></em></p></td>
+<td><p></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -885,7 +893,15 @@ document.write(`
 <td><p></p></td>
 </tr>
 <tr class="row-even"><td><p>MAC Address Resource Pool</p></td>
-<td><p>Click <strong>ADD</strong> (opens new wizard)</p></td>
+<td><p>Pull <strong>DOWN</strong> on the right hand arrow and select the pre-defined MAC address pool</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">02:00:00:00:00:aa-02:00:00:00:00:ff</span></code></p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><em><strong>Click NEXT</strong></em></p></td>
+<td><p></p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -910,7 +926,7 @@ document.write(`
 </section>
 <section id="id14">
 <h3>Expected Results<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
-<p>The VSX cluster consisting of the two CX 10000 should be successfully created and should also be up and healthy.</p>
+<p>The VSX cluster consisting of the two CX 10000 should be successfully created and should also be up and healthy. Refresh browswer, if necessary.</p>
 <p><img alt="VSX Health" src="_images/lab2-vsx-health.png" /><br />
 <em>Fig. Lab 3 VSX Health</em></p>
 </section>
