@@ -1,7 +1,7 @@
 ![Lab Overview](images/hpe-logo2.svg)
 
 ![Disclosure](images/disclose.png)
-_Fig. Disclosure_
+
 
 <h1>Data Center Networking - Microsegmentation with AFC & CX 10K</h1>
 
