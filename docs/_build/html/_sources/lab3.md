@@ -17,24 +17,13 @@ In this lab, we are going to use the Aruba Fabric Composer (AFC) to:
 
 ### Description
 Using the AFC we will discover the already deployed CX10000 switches.
-### Validate
-1. Log in to the AFC using the following details:
-
-|   |   |
-|---|---|
-| URL | ``https://10.250.2LG.30`` (where LG is your Lab Group #)
-| Username |  ``admin``  
-| Password | ``admin``  
-
-![AFC Login](images/lab1-afc-login.png)  
-_Fig. Lab 3 AFC Login_  
-
-2. Using the **Guided Setup** menu on the right side, click on the **SWITCHES** button in order to discover the new switches.
+ 
+1. Using the **Guided Setup** menu on the right side, click on the **SWITCHES** button in order to discover the new switches. If the right-hand menu is missing, click on the icon to the left of the person icon. This toggles the workflow menu.
 
 ![Discover Switches](images/lab2-discover-switches-menu.png)  
 _Fig. Lab 3 Discover Switches_  
 
-3. To import the CX 10000 Switches, enter the following parameters in the form:  
+2. To import the CX 10000 Switches, enter the following parameters in the form:  
 
 |   |   |
 |---|---|
@@ -215,7 +204,7 @@ Virtual Switching Extension (VSX) is virtualization technology for switches runn
 In this step, we will create a VSX cluster with both CX 10000 Switches.
 
 ### Validate
-In the **Guided Setup** menu click on **DNS Configuration**
+In the **Guided Setup** menu click on **VSX Configuration**
 
 ![VSX Configuration](images/lab2-vsx-configuration.png)  
 _Fig. Lab 3 VSX Configuration_ 

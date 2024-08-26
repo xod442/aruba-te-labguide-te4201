@@ -179,7 +179,7 @@ _Fig. Lab 3 Configure DNS_
 |**Step 2 - Settings**|  |
 | Domain Name | dsf.lab.local |  
 | Name Server | 10.250.2LG.9 - hit **Enter** after typing the IP Address (LG is your labgroup number) |  
-| ***Scroll down, click ADD and NEXT*** |
+| ***Click NEXT*** |
 
 |   |   |
 |---|---|
@@ -234,7 +234,9 @@ _Fig. Lab 3 VSX Configuration_
 |---|---|---|
 |**Step 4 - Keep Alive Interfaces**| |
 |Interface Mode| Point-to-Point |
-|| Click **ADD** (opens a new wizard)|
+|IPv4 Address Resource Pool| Pull **DOWN** on the right hand arrown and select the pre-defined IPv4 pool|
+||``dsf-ipv4-pool(10.10.0.0-10.10.0.255)``|
+| ***Click NEXT***||
 
 
 |   |   |
@@ -248,7 +250,9 @@ _Fig. Lab 3 VSX Configuration_
 |---|---|---|
 |**Step 6 - Options**| |
 |Linkup Delay Timer| (keep the default value) |
-|MAC Address Resource Pool| Click **ADD** (opens new wizard)|
+|MAC Address Resource Pool| Pull **DOWN** on the right hand arrow and select the pre-defined MAC address pool|
+||``02:00:00:00:00:aa-02:00:00:00:00:ff``|
+| ***Click NEXT***||
 
 
 |   |   |
@@ -258,7 +262,7 @@ _Fig. Lab 3 VSX Configuration_
 
 
 ### Expected Results
-The VSX cluster consisting of the two CX 10000 should be successfully created and should also be up and healthy.
+The VSX cluster consisting of the two CX 10000 should be successfully created and should also be up and healthy. Refresh browswer, if necessary.
 
 ![VSX Health](images/lab2-vsx-health.png)  
 _Fig. Lab 3 VSX Health_ 

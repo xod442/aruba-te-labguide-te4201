@@ -71,6 +71,4 @@ _Fig. Lab 1 AFC Login_
 
 ### Expected Results
 
-Once inside, you will be connected via https and RDP to a Windows 10 machine that has access to all of the lab components.
-
 After supplying the credentials to AFC you will see the dashboard.

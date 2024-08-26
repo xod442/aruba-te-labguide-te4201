@@ -89,7 +89,7 @@ _Fig. Lab 2 Settings MAC Resource Pool_
 ### Expected Results  
 On the display should be a list of bother address pools.
 
-![New MAC Settings](images/rp8.png)  
+![New MAC Settings](images/rp9.png)  
 _Fig. Lab 2 Both Resource Pools_ 
 
 ## Lab 2 Summary  
