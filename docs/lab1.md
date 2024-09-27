@@ -1,4 +1,4 @@
-### Confidential | For Training Purposes Only
+Confidential | For Training Purposes Only
 
 # Lab 1 - Accessing the Lab
 

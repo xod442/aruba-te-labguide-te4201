@@ -1,3 +1,5 @@
+Confidential | For Training Purposes Only
+
 # Lab 6 - Visibility and Troubleshooting
 
 ## Lab Overview

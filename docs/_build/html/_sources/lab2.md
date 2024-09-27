@@ -1,3 +1,5 @@
+### Confidential | For Training Purposes Only
+
 # Lab 2 - Create Network Resource Pools
 
 ## Lab Overview

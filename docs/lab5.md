@@ -1,3 +1,5 @@
+Confidential | For Training Purposes Only
+
 # Lab 5 - Microsegmentation
 
 ## Lab Overview
