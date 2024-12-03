@@ -18,7 +18,7 @@ In order to successfully redirect packets over the switch, we need to create a c
 
 2. Click the 3 dots left of **default** and select **IP Interfaces**.  
 
-![IP Interfaces](images/lab5-ip-interfaces.png)  
+![IP Interfaces](images/image49.png)  
 _Fig. Lab 6 IP Interfaces_  
 
 3. In the **IP Interfaces** context, select **Actions**, then **Add** and enter the following information in the form  
@@ -88,6 +88,11 @@ To test the rule and visualize the flows, follow the following steps:
 _Fig. Lab 6 Ping SVI_  
 
 ### Expected Results
+```{note}
+* If you cannot ping your gateway, check to see if the switch ports are up!
+```
+![Ping SVI](images/image55.png)  
+_Fig. show ip interface brief_ 
 
 Now have a look at the following network diagram to understand the flow.  Both WL01 and WL2 have 10.0.10.xxx IP Addresses and the Primary VLAN (VLAN 10) is paired with an Isolated VLAN (VLAN 11).  The traffic on VLAN 11 is re-routed to the DSM chip on the CX10K for processing via the primary VLAN 10.  
 
@@ -95,13 +100,6 @@ Now have a look at the following network diagram to understand the flow.  Both W
 _Fig. Lab 6 SVI Diagram_  
 
 Policies will be defined using the AFC and sent, via automation, to the Pensando PSM. In turn, the PSM will program the enforcement on the DSM chips. A workload aware infrastructure built on top of a fully programmable, Automated, Scalable network pipeline.  
-
-```{note}
-If you cannot ping the gateway, check to see that the switch ports are up!  Enable port with no shut command.
-```  
-
-![Switch Port Up](images/lab5-switch-port-up.png)  
-_Fig. Lab 6 Switch Port Up_  
 
 
 ## Lab 6.3 - View Flow Logs
@@ -142,7 +140,7 @@ In this example, VLAN 10 is redirected to DSM 1/1 on both switches, however in y
 5. To visualize the flows, enter diagnostics mode on the switch by entering the following commands:  
 
   - ``diagnostics``  
-  - ``diag dsm console 1/1 or 1/2`` (ensure you specify the DSM from the command above)  
+  - ``diag dsm console 1/1 or 1/2`` (<span style="color:orange">**ensure you specify the DSM from the command above**</span>)  
   - ``pdsctl show flow``  
 
 ### Expected Results  
@@ -175,10 +173,13 @@ _Fig. Lab 6 Flow Graphs_
 
 3. Go to **Monitoring / Metrics** and select **CREATE CHART** (top right)  
 
+![Create Chart](images/image61.png)  
+_Fig. Create Chart_  
+
 4. Create a chart using the following paramters and save it.  For the ***Select DSSs*** drop down, choose the ***both switches***.  _Make sure to select the DPU you saw from the PDSCTL command you ran earlier_ (should be either 1/1 or 1/2).  Once completed, click **Save Chart**  
 
 ![Create Chart](images/lab5-create-chart.png)  
-_Fig. Create Chart_  
+_Fig. Chart Options_  
 
 ### Expected Results  
 Since we should still have ping running between the workloads, we should see a graph similar to the following screenshot.  You can use this reporting function from the PSM to visualize all traffic passing through the DSM chips.  
@@ -201,7 +202,15 @@ During this exercise, we will use the AFC to modify the policy that we created i
 
 2. Go to **Configuration / Policy / Rules**  
 
+![New Flow Chart](images/image68.png)  
+_Fig. Rules Menu_  
+
+![New Flow Chart](images/image69.png)  
+_Fig. Add New Rule_  
+
+
 3. Create the first ``allow_ssh`` Rule using the following settings:  
+
 
 |   |   |
 |---|---|
@@ -258,7 +267,7 @@ During this exercise, we will use the AFC to modify the policy that we created i
 |   |   |
 |---|---|
 | **Step 4 - Application and Service Qualifiers** | |  
-| ***Leave the Application box emtpy and click ADD at the bottom*** | |
+| <span style="color:orange">**Leave the Application box emtpy and click ADD at the bottom**</span> | |
 
 |   |   |   |
 |---|---|---|  
@@ -309,7 +318,9 @@ There is an implicit deny all rule at the end of any policy, so this step is opt
 | Applications | (leave empty) |  
 | Service Qualifiers | (leave empty) |  
 | **Click NEXT** | |
-| Review the Summary and **Click APPLY** | |  
+| Review the Summary and **Click APPLY** | | 
+
+```Note: Super Important!!!```
 
 6. Go to **Policies**, find the **dsf-leafLG-01** policy, and click the **3 dots** to add/modify the rules  
 

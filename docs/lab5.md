@@ -21,8 +21,9 @@ In this task, you will create 2 endpoint groups. An endpoint group in Fabric Com
 _Fig. Lab 5 Endpoint Groups Menu_  
 
 2. From the **ACTIONS** menu, select **Add**  
+If there are existing endpoint groups, just ignore them.
 
-![Add Endpoint Group](images/lab4-add-endpoint-groups.png)  
+![Add Endpoint Group](images/image30.png)  
 _Fig. Lab 5 Add Endpoint Group_  
 
 3. Create an Endpoint Group for Workload01
@@ -49,8 +50,13 @@ _Fig. Lab 5 Add Endpoint Group_
 | VNIC | Select any ***Network Adapter 2*** with ``10.0.10.101`` |
 | Scroll down, ***click ADD, NEXT and APPLY*** | |
 
+Look for your workload number and verify it is assigned to your lab group!
 
-4. Create an Endpoint Group for Workload02
+![Add Endpoint Group](images/image31.png)  
+_Fig. Choose Wisely_  
+
+
+4. From the **ACTIONS** menu, select **Add** to create an Endpoint Group for Workload02
 
 |   |   |
 |---|---|
@@ -77,6 +83,8 @@ _Fig. Lab 5 Add Endpoint Group_
 ### Expected Results
 The Endpoint Groups should have been created based on VM Tag and visible in the list.
 
+![Add Endpoint Group](images/image32.png)  
+_Fig. Two complete Endpoint Groups_  
 
 ## Lab 5.2 - Create Firewall Rule
 
@@ -88,6 +96,9 @@ When enabling Microsegmentation, an explicit Deny All rule is placed at the bott
 1. Using the AFC, select **Policy** and then **Rules** from the top level menu, or if still visible, select **Rules** from the left menu.
 
 2. From the **ACTIONS** menu, select **Add** to add a new Rule
+
+![Add Endpoint Group](images/image34.png)  
+_Fig. Lab 5 Add Endpoint Group_  
 
 |   |   |
 |---|---|
@@ -132,6 +143,8 @@ Firewall Rules are placed in Policies and are enforced in a top to bottom fashio
 1. Using the AFC, select **Policy** and then **Policies** from the top level menu, or if still visible, select **Policies** from the left menu.
 
 2. From the **ACTIONS** menu, select **Add** to add a new Rule
+![Add Endpoint Group](images/image35.png)  
+_Fig. Adding a policy_  
 
 |   |   |
 |---|---|
@@ -234,6 +247,9 @@ _Fig. Lab 5 Configure Microsegmentation_
 | Isolated VLAN NICS | Click **SELECT VNICS** |  
 | | Scroll down, select both Network Adapter 2 with IP address: ``10.0.10.101`` and ``10.0.10.102`` |
 | | _Note: workloads must be connected to the isolated VLAN_
+| | ![Add Endpoint Group](images/image40.png)  
+ 
+
 | ***Click NEXT*** | |
 
 |   |   |
